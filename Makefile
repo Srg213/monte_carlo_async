@@ -1,13 +1,13 @@
 CC = g++
-CFLAGS = -Iinclude -Wall -Wextra -std=c++11
-SRC = src/main.cpp src/utils.cpp src/demo/vector_add.cpp
+CFLAGS = -Iinclude -Wall -Wextra -std=c++14
+SRC = src/main.cpp src/utils.cpp src/async_ex/matrix_mult.cpp
 OBJ = $(SRC:.cpp=.o)
 TARGET = monte_carlo
 
 all: $(TARGET)
 
 $(TARGET): $(OBJ)
-	$(CC) -o $@ $^
+	$(CC) $(CFLAGS) -o $@ $^
 
 %.o: %.cpp
 	$(CC) $(CFLAGS) -c $< -o $@
