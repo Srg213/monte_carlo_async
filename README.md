@@ -1,25 +1,26 @@
-# My C++ Project
+# Monte Carlo Method with OpenMP and Async
 
-This project is a simple C++ application that demonstrates the structure and organization of a C++ project using separate source and header files.
+This repository demonstrates a sample implementation of the Monte Carlo method using OpenMP for parallelism and `std::async` for asynchronous programming in C++.
 
-## Project Structure
+## Features
 
-```
-my-cpp-project
-├── src
-│   ├── main.cpp        # Entry point of the application
-│   └── utils.cpp       # Implementation of utility functions
-├── include
-│   └── utils.h         # Header file for utility functions
-├── Makefile            # Build instructions
-└── README.md           # Project documentation
-```
+- **Matrix-Vector Multiplication**:
+  - Implemented using both OpenMP and `std::async` for parallelism.
+- **Vector Addition**:
+  - Parallelized using OpenMP.
+- **Utility Functions**:
+  - Includes basic utility functions for demonstration purposes.
+
+## Prerequisites
+
+- A C++ compiler that supports C++14 or later (e.g., `g++`).
+- OpenMP support enabled in the compiler.
 
 ## Building the Project
 
-To build the project, navigate to the project directory and run the following command:
+To build the project, navigate to the project directory and run:
 
-```
+```bash
 make
 ```
 
@@ -30,8 +31,13 @@ This will compile the source files and create the executable.
 After building the project, you can run the application with the following command:
 
 ```
-./my-cpp-project
+make run
 ```
+
+## TODO
+
+Benchmark and compare monte carlo method for different iterations.
+
 
 ## Contributing
 
